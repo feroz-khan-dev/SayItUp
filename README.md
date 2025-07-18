@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 SayItUp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SayItUp** is a public feedback platform where users can post reviews about companies and upvote others' experiences. Built with a modern React and Next.js stack, SayItUp focuses on scalability, accessibility, performance, and developer best practices.
 
-Currently, two official plugins are available:
+> ✅ Open-source. Fully type-safe. Deployed on Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 [sayitup.vercel.app](https://sayitup.vercel.app) _(Coming Soon)_
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Category               | Tech & Tools |
+|------------------------|--------------|
+| **Languages**          | React + TypeScript |
+| **Styling**            | Tailwind CSS |
+| **State Management**   | Zustand or React Context API |
+| **API & Server**       | Next.js (App Router, Server Components, Route Handlers, Server Actions) |
+| **Database**           | PostgreSQL + Prisma ORM |
+| **Forms & Validation** | React-Hook-Form + Zod |
+| **Authentication**     | Next-Auth |
+| **UI & Animation**     | Shadcn‑UI + Framer Motion |
+| **Deployment**         | Vercel |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 📝 Users can post anonymous or public reviews about companies
+- 👍 Reviews can be upvoted by others
+- 🔐 Secure authentication using `NextAuth.js`
+- ⚙️ Server-side rendering with Next.js App Router & Server Components
+- 🧠 Form validation using `React Hook Form` + `Zod`
+- 💅 Beautiful UI with `Tailwind CSS` and `Shadcn UI`
+- ⚡ Smooth animations using `Framer Motion`
+- 🗃️ Scalable database design with Prisma + PostgreSQL
+
+---
+
+## 📂 Project Structure (Simplified)
+
