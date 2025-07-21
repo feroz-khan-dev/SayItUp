@@ -17,7 +17,7 @@ function App() {
 
         {/* Main Content */}
         <div className="flex-1 ml-[320px]">
-          <div className="max-w-[640px] mx-auto p-4">
+          <div className="max-w-[960px] mx-auto p-4">
             <Container />
           </div>
         </div>
